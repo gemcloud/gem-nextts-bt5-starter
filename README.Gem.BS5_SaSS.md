@@ -61,6 +61,33 @@ npm i --save @fortawesome/fontawesome-svg-core  @fortawesome/free-solid-svg-icon
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.15",
 
+### install SaSS
+
+1. install SaSS
+
+```
+>npm i sass
+```
+
+2. Create "global.scss" file and import at "\_app.tsx"
+3. Create "index.module.scss" file and import at "indexFirebase.tsx"
+4. using them
+
+### Absolute Imports and Module path aliases(https://nextjs.org/docs/advanced-features/module-path-aliases)
+
+1. modify / create file "tsconfig.json" on root.
+2. setting rules ( must add "src/" )
+   ```
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+      "@/components/*": ["src/components/*"],
+      "@libs/*": ["src/libs/*"],
+      "@styles/*": ["src/styles/*"]
+      }
+    }
+   ```
+
 ## 2021-12-22 todo
 
 done 1. install bootstrap

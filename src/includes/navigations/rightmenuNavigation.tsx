@@ -47,11 +47,11 @@ const rightmenuNavigation = () => {
         if (activeLink != i) {
           links[activeLink].classList.remove("active");
           link.classList.add("active");
-          sections[activeLink].classList.remove("active");
+          sections[activeLink]?.classList.remove("active");
 
           setTimeout(() => {
             activeLink = i;
-            sections[i].classList.add("active");
+            sections[i]?.classList.add("active");
           }, 1000);
         }
       });
@@ -71,7 +71,7 @@ const rightmenuNavigation = () => {
       }}
     >
       <div className="container">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           <h5>
             <span className="waving-hand">👋</span> Logo Name
           </h5>
@@ -87,7 +87,7 @@ const rightmenuNavigation = () => {
         <div className="collapse navbar-collapse" id="collapsibleNavbar">
           <ul className="navbar-nav ms-auto my-2 my-lg-0">
             <li className="nav-item active">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="/">
                 home
               </a>
             </li>
@@ -96,11 +96,11 @@ const rightmenuNavigation = () => {
                 project
               </a>
             </li>
-            {/* <li className="nav-item">
-              <a className="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="/indexFirebase">
                 blog
               </a>
-            </li> */}
+            </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
                 about

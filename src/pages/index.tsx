@@ -7,9 +7,10 @@ export default function Home() {
     <>
       <Layout>
         <Head>
-          <title>🎯 Gem Cloud, Next.js, TypeScript, BootStrip5</title>
+          <title>🎯 Gem Cloud, Next.js, TypeScript, BootStrip5 + SaSS</title>
         </Head>
         <div style={{ marginTop: "7rem" }}></div>
+        <h2>Hello Hero Section Here!</h2>
       </Layout>
     </>
   );

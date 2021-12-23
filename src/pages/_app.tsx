@@ -1,4 +1,6 @@
 import "bootstrap/dist/css/bootstrap.css"; // import bootstrap.css
+import "@styles/global.scss";
+
 // import "font-awesome/css/font-awesome.min.css";
 import "../styles/wavehand.css";
 import "../styles/firstlanding.css";

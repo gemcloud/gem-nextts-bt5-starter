@@ -21,34 +21,51 @@ run the development server:
 # or
 >yarn dev
 ```
-  
+
 ## Technology stack:
 
-  * [React](https://github.com/facebook/react)
-  * [Next.js](https://github.com/zeit/next.js)
-  * [Firebase Firestore & Auth](https://firebase.google.com/)
-  * [Styled-Components](https://github.com/styled-components/styled-components)
-  * [Mobx-State-Tree](https://github.com/mobxjs/mobx-state-tree)
-  * [Ant Design](https://github.com/ant-design/ant-design)
-  * [Marksy](https://github.com/storybooks/marksy)
-  * [ESLint](https://github.com/eslint/eslint)
-  * [Prettier](https://github.com/prettier/prettier)
-  * [Webpack](https://github.com/webpack/webpack)
-  * [Husky](https://github.com/typicode/husky) & [Lint-Staged](https://github.com/okonet/lint-staged)
+- [React](https://github.com/facebook/react)
+- [Next.js](https://github.com/zeit/next.js)
+- [Firebase Firestore & Auth](https://firebase.google.com/)
+- [Styled-Components](https://github.com/styled-components/styled-components)
+- [Mobx-State-Tree](https://github.com/mobxjs/mobx-state-tree)
+- [Ant Design](https://github.com/ant-design/ant-design)
+- [Marksy](https://github.com/storybooks/marksy)
+- [ESLint](https://github.com/eslint/eslint)
+- [Prettier](https://github.com/prettier/prettier)
+- [Webpack](https://github.com/webpack/webpack)
+- [Husky](https://github.com/typicode/husky) & [Lint-Staged](https://github.com/okonet/lint-staged)
 
 ## What you get:
 
-  * Posts feed
-  * Featured posts
-  * Posts by tags and category
-  * Multi language support
-  * Multi author support
-  * Markdown with ability to use custom React components
-  * Simple and convenient CMS inspired by Ghost
-  * CMS is protected by Firebase Auth
-  * Quick and SEO-friendly responses with SSR
-  * Good results in Lighthouse
+- Posts feed
+- Featured posts
+- Posts by tags and category
+- Multi language support
+- Multi author support
+- Markdown with ability to use custom React components
+- Simple and convenient CMS inspired by Ghost
+- CMS is protected by Firebase Auth
+- Quick and SEO-friendly responses with SSR
+- Good results in Lighthouse
 
 ## Getting started
 
-## Getting Start: BootStripe 5 and implement Mobile Navbar
+## Getting started: BootStripe 5 and implement Mobile Navbar
+
+implemented on Dec. 22, 2021
+
+## Getting started: Connect Firebase to save mt blog & portfolio data
+
+starting on Dec. 23, 2021
+reference :
+
+- https://github.com/suevalov/next-blog-firestore
+- https://bestofreactjs.com/repo/suevalov-next-blog-firestore-react-nextjs-boilerplates
+- https://www.c-sharpcorner.com/article/host-static-website-using-firebase-hosting-service/
+- https://ashleemboyer.com/
+- https://ashleemboyer.com/nextjs-firebase-blog-01
+
+firebase worked on my local, but because V8 to V9, there are new coding styles!!!
+
+## Getting started: Deploy to Vercel

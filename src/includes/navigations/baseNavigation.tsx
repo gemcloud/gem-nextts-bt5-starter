@@ -91,11 +91,11 @@ const baseNavigation = () => {
                 project
               </a>
             </li>
-            {/* <li className="nav-item">
-              <a className="nav-link" href="#">
+            <li className="nav-item">
+              <a className="nav-link" href="/indexFirebase#">
                 blog
               </a>
-            </li> */}
+            </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
                 about
