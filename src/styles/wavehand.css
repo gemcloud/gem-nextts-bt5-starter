@@ -1,0 +1,92 @@
+.waving-hand {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  30% {
+    transform: rotate(-8deg);
+  }
+  40% {
+    transform: rotate(14deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* footer social icon tag <i> */
+.footer .social-icons i {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  color: #141414;
+  cursor: pointer;
+}
+
+/* Header Menu hover */
+/* .navbar-component .navbar .container .navbar-nav .nav-item .nav-link { */
+#collapsibleNavbar .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+  margin: 0 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1;
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  padding: 5px;
+  overflow: hidden;
+  color: #333;
+  vertical-align: bottom;
+  transition: color 0.3s ease-out;
+}
+
+/* .navbar-component .navbar .container .navbar-nav .nav-item .nav-link:before { */
+#collapsibleNavbar .navbar-nav .nav-item .nav-link:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transform: translateY(calc(100% - 2px));
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(60deg, #64b3f4, #c2e59c);
+  transition: transform 0.25s ease-out;
+}
+
+#collapsibleNavbar .navbar-nav .nav-item .nav-link:hover {
+  color: #fff;
+}
+
+#collapsibleNavbar .navbar-nav .nav-item .nav-link:hover::before {
+  /* // CSS Property */
+  transform: translateY(0);
+  transition: transform 0.25s ease-out;
+}
+#collapsibleNavbar .navbar-nav .nav-item .nav-link:hover::after {
+  /* // CSS Property */
+}
+
+#collapsibleNavbar .navbar-nav .nav-item {
+  margin-top: 2rem;
+  text-align: center;
+}
