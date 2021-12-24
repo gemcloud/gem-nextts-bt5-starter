@@ -26,7 +26,8 @@
     "**/*.ts",
     "**/*.tsx",
     "src/libs/firebase.js",
-    "src/pages/indexFirebase.js"
+    "src/pages/indexFirebase.js",
+    "src/libs/firebaseV9.ts.todo"
   ],
   "exclude": ["node_modules"]
 }

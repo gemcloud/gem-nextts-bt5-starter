@@ -2,8 +2,11 @@ import * as React from "react";
 import { useEffect, useState } from "react";
 
 //export const rightmenuNavigation = () => {
-const rightmenuNavigation = () => {
-  const [clientWindowHeight, setClientWindowHeight] = React.useState("");
+// const rightmenuNavigation = () => {
+function rightmenuNavigation() {
+  const [clientWindowHeight, setClientWindowHeight] = useState<number>(0);
+
+  // const [inputValue, setInputValue] = React.useState("");
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);
@@ -18,8 +21,14 @@ const rightmenuNavigation = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   });
 
+  function getYPosition() {
+    var top = window.pageYOffset || document.documentElement.scrollTop;
+    return top;
+  }
+
   const handleScroll = () => {
-    setClientWindowHeight(window.scrollY);
+    // setClientWindowHeight(window.scrollY);
+    setClientWindowHeight(getYPosition());
   };
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -116,6 +125,6 @@ const rightmenuNavigation = () => {
       </div>
     </nav>
   );
-};
+}
 
 export default rightmenuNavigation;

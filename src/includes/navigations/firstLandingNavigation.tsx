@@ -2,7 +2,7 @@ import * as React from "react";
 import { useEffect, useState } from "react";
 
 const firstLandingNavigation = () => {
-  const [clientWindowHeight, setClientWindowHeight] = React.useState("");
+  const [clientWindowHeight, setClientWindowHeight] = React.useState(0);
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);

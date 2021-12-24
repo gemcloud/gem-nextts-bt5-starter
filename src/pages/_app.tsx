@@ -11,9 +11,13 @@ import Script from "next/script";
 import type { AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  // import bootstrap-js
+  // import bootstrap-js-libs below for _app.js
+  // useEffect(() => {
+  //   import("bootstrap/dist/js/bootstrap");
+  // }, []);
+
   useEffect(() => {
-    import("bootstrap/dist/js/bootstrap");
+    typeof document !== undefined ? require("bootstrap/dist/js/bootstrap") : null;
   }, []);
 
   return (
