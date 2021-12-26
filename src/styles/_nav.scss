@@ -80,9 +80,9 @@
   }
   &::before {
     content: "";
-    background: url(../../img/bg_top.png) no-repeat right top;
+    background: url(/assets/img/bg_top.png) no-repeat right top;
     background-color: transparent;
-    background-image: url(../../img/bg_top.png);
+    background-image: url(/assets/img/bg_top.png);
     background-size: cover;
     width: 59vw;
     height: 100%;

@@ -69,3 +69,25 @@ reference :
 firebase worked on my local, but because V8 to V9, there are new coding styles!!!
 
 ## Getting started: Deploy to Vercel
+
+#### you have to run build before check to GIT and Deploy to vercel!!!
+
+```
+> yarn run build
+```
+
+I deployd to https://gem-nextts-bt5-starter.vercel.app/
+
+##
+
+### Prerequisites
+
+The reader should be aware of the following technologies:-
+
+-JavaScript ES6
+-Basic CSS
+-React.js library
+-Nex.js framework
+-JAM Stack
+
+### What we will learn

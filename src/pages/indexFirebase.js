@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout from "../layouts/baseLayout";
-import styles from "@styles/index.module.scss";
-import { getPosts } from "@libs/firebase"; // #firebase
+import styles from "@/styles/index.module.scss";
+import { getPosts } from "@/libs/firebase"; // #firebase
 
 //### Start of helper function
 // const getFormattedDate = (milliseconds: string | number | Date) => {

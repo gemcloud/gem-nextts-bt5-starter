@@ -96,15 +96,10 @@ done 3. firstlanding landing page
 
 done 4. favicon icon on SeoMeta.tsx used emoji
 
-5. animantion hello
-6. floyet.com header
+done 5. animantion hello
 
 C:\VGuanSampleJam\ixartzNext-JS-Landing-Page
 
 1. add env cross for webpack_V5
 2. site-map
-3. read md file
-4. boot nav bar
-
-5. blog
-6.
+3. read md file read data.js and consume them on youtube

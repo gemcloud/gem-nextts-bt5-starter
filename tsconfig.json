@@ -14,11 +14,9 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
-      "@/components/*": ["src/components/*"],
-      "@libs/*": ["src/libs/*"],
-      "@styles/*": ["src/styles/*"]
+      "@/*": ["*"]
     }
   },
   "include": [
@@ -27,7 +25,9 @@
     "**/*.tsx",
     "src/libs/firebase.js",
     "src/pages/indexFirebase.js",
-    "src/libs/firebaseV9.ts.todo"
+    "src/libs/firebaseV9.ts.todo",
+    "src/containers/GemHomePage.tsx.org",
+    "src/modals/LanguageModal.jsx"
   ],
   "exclude": ["node_modules"]
 }
