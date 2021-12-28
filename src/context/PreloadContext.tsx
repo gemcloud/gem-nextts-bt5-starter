@@ -49,6 +49,7 @@ export function PreloadProvider({ children }: { children: React.ReactNode }) {
         <PacmanLoader
           css={override}
           color={"#b2e5ff"}
+          size={25}
           loading={showLoader}
         ></PacmanLoader>
       </div>

@@ -50,18 +50,3 @@ https://developer.school/snippets/react/localstorage-is-not-defined-nextjs
 
 localStorage.setItem("gem-language");
 localStorage.getItem("gem-language");
-
-### Homepage
-
-react-animate-on-scroll
-
-```
->npm install react-animate-on-scroll --save
-looks old cannot install
-```
-
-try AOS - Animate on scroll library ()
-
-```
-> npm install aos --save
-```

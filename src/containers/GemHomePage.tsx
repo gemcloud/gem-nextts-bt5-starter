@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-
-// import div from "react-animate-on-scroll";
 import { css } from "@emotion/react";
-import { ScaleLoader } from "react-spinners";
+import { ScaleLoader, ClipLoader } from "react-spinners";
+import { AosAnimations } from "@/constants/aosAnimations";
 
 const override = css`
   display: block;
@@ -68,7 +67,7 @@ function GemHomePage() {
         </section>
 
         <div className="brief">
-          <div data-aos="fadeIn">
+          <div data-aos="fade-in" data-aos-delay="100">
             <blockquote>
               <p>There is always a distinctive way to promote a brand</p>
             </blockquote>
@@ -77,10 +76,10 @@ function GemHomePage() {
 
         <div className="container">
           <section id="about" className="about">
-            <div data-aos="fadeIn">
+            <div data-aos="fade-in" data-aos-delay="100">
               <h2 className="heading">About</h2>
             </div>
-            <div data-aos="fadeIn">
+            <div data-aos="fade-in" data-aos-delay="200">
               <div className="content">
                 <p>
                   You have a brand in your mind, and striving to implement it? or you are
@@ -121,10 +120,10 @@ function GemHomePage() {
             </div>
           </section>
           <section id="services" className="services">
-            <div data-aos="fadeIn">
+            <div data-aos="fade-in" data-aos-delay="100">
               <h2 className="heading">Services</h2>
             </div>
-            <div data-aos="fadeIn">
+            <div data-aos="fade-in" data-aos-delay="200">
               <p className="heading-description">
                 We are dedicated to strengthening specific areas of your brand by
                 providing numerous services.
@@ -133,7 +132,7 @@ function GemHomePage() {
             <div className="content">
               <div className="row">
                 <div className="col-lg-4 col-md-4 col-12 item-container">
-                  <div data-aos="fadeIn">
+                  <div data-aos="fade-up-right">
                     <div className="item">
                       <div className="image-title">
                         <img src="/assets/img/website.png" />
@@ -147,7 +146,7 @@ function GemHomePage() {
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-4 col-12 item-container">
-                  <div data-aos="fadeIn">
+                  <div data-aos="fade-up-left">
                     <div className="item">
                       <div className="image-title">
                         <img src="/assets/img/mobile-app.png" />
@@ -161,7 +160,7 @@ function GemHomePage() {
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-4 col-12 item-container">
-                  <div data-aos="fadeIn">
+                  <div data-aos="fade-up">
                     <div className="item">
                       <div className="image-title">
                         <img src="/assets/img/digital-marketing.png" />
@@ -175,7 +174,7 @@ function GemHomePage() {
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-4 col-12 item-container">
-                  <div data-aos="fadeIn">
+                  <div data-aos="fade-down-right">
                     <div className="item">
                       <div className="image-title">
                         <img src="/assets/img/graphics.png" />
@@ -190,7 +189,7 @@ function GemHomePage() {
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-4 col-12 item-container">
-                  <div data-aos="fadeIn">
+                  <div data-aos="fade-down">
                     <div className="item">
                       <div className="image-title">
                         <img src="/assets/img/seo.png" />
@@ -204,7 +203,7 @@ function GemHomePage() {
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-4 col-12 item-container">
-                  <div data-aos="fadeIn">
+                  <div data-aos="fade-down-left">
                     <div className="item">
                       <div className="image-title">
                         <img src="/assets/img/social.png" />
@@ -222,18 +221,18 @@ function GemHomePage() {
           </section>
 
           <section id="products" className="products">
-            <div data-aos="fadeIn">
+            <div data-aos="fade-in" data-aos-delay="100">
               <h2 className="heading">Products</h2>
             </div>
 
             <div className="content">
-              <div data-aos="fadeIn">
+              <div data-aos="fade-in" data-aos-delay="200">
                 <p>
                   We are powering some blogs, eCommerce websites, mobile apps, youtube
                   channels, and business management software solutions.
                 </p>
               </div>
-              <div data-aos="fadeIn">
+              <div data-aos="slide-right">
                 <div className="row">
                   <div className="col-lg-2 col-md-2 col-4 item">
                     <a href="https://www.techomoro.com" target="_blank">
@@ -284,7 +283,7 @@ function GemHomePage() {
                       </p>
                     </div>
                   ) : (
-                    <div data-aos="fadeIn">
+                    <div data-aos="fade-in" data-aos-delay="100">
                       <input
                         type="text"
                         className="form-control"
@@ -320,7 +319,6 @@ function GemHomePage() {
                         <div className="sweet-loading">
                           <ScaleLoader
                             css={override}
-                            /* size={50} */
                             color={"#141414"}
                             loading={sendDataButtonClicked}
                           />
@@ -338,7 +336,7 @@ function GemHomePage() {
                   )}
                 </div>
                 <div className="col-lg-6 details order-first">
-                  <div data-aos="fadeIn">
+                  <div data-aos="fade-in" data-aos-delay="100">
                     <div className="item">
                       <i className="fas fa-mobile-alt"></i>
                       <a href="tel:+017781230000">+01 7781230000</a>

@@ -1,14 +1,18 @@
 import "bootstrap/dist/css/bootstrap.css"; // import bootstrap.css
+import "animate.css/animate.min.css";
 import "@/styles/wavehand.css";
 import "@/styles/global.scss";
 import "@/styles/_nav.scss";
 import "@/styles/_gemhome.scss";
-import "../styles/firstlanding.css";
+// import "../styles/firstlanding.css";
 
 // import * as React from "react";
 import { useState, useEffect } from "react";
 import Script from "next/script";
 import type { AppProps } from "next/app";
+import AOS from "aos";
+// import aos styles
+import "aos/dist/aos.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   //#### import bootstrap-js-libs below for _app.js   ####
@@ -26,6 +30,14 @@ function MyApp({ Component, pageProps }: AppProps) {
     // Perform localStorage action
     //const item = localStorage.getItem("key");
     storedLanguage = localStorage.getItem("gem-language") || "";
+  }, []);
+
+  //#### Initialize AOS with your page   ####
+  useEffect(() => {
+    // here you can add your aos options
+    AOS.init({
+      offset: 100
+    });
   }, []);
 
   const [showLanguageModal, setShowLanguageModal] = useState<boolean>(false);
