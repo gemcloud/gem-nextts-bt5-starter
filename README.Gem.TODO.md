@@ -51,3 +51,15 @@ blog
 contact us
 gemLayout
 gemHomePage
+
+#### 2021-12-25-27: Animation Scroll by AOS
+
+#### 2021-12-27-28: Multi-Language : lingui
+
+#### 2021-12-28:
+
+1.  https://www.jarrodwatts.com/ git + youtube + blog
+2.  head.js portfolio one of showcase
+3.  thomas?
+
+#### 2021-12-29:
