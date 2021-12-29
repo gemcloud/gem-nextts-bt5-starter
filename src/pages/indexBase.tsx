@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import Layout from "../layouts/baseLayout";
+import Layout from "@/layouts/BaseLayout";
 
 export default function Home() {
   return (

@@ -1,9 +1,8 @@
 import { ReactNode } from "react";
-import { Meta } from "../../src/includes/seo/SeoMeta";
+import { Meta } from "../includes/seo/SeoMeta";
 
-// import Navigation from "../../src/includes/navigations/baseNavigation";
-import Navigation from "../includes/navigations/RightmenuNavigation";
-import Footer from "../../src/includes/footers/baseFooter";
+import Navigation from "@/includes/navigations/RightmenuNavigation";
+import Footer from "@/includes/footers/baseFooter";
 
 // interfacce
 type ILayoutProps = {
@@ -11,7 +10,7 @@ type ILayoutProps = {
 };
 
 // const LayoutThomas = ({ children }) => {
-const baseLayout = (props: ILayoutProps) => {
+const BaseLayout = (props: ILayoutProps) => {
   return (
     <>
       <Meta />
@@ -22,4 +21,4 @@ const baseLayout = (props: ILayoutProps) => {
   );
 };
 
-export default baseLayout;
+export default BaseLayout;

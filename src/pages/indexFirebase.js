@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Layout from "../layouts/baseLayout";
+import Layout from "../layouts/BaseLayout";
 import styles from "@/styles/index.module.scss";
 import { getPosts } from "@/libs/firebase"; // #firebase
 
