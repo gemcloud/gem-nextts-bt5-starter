@@ -1,12 +1,18 @@
-This is [Gem Cloud](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) project bootstrapped
+This is [Gem Cloud](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) project bootstrapped on Windows 10-11.
 
 Using BootStrip 5
 
 ## Prepare project
 
+Because I am using Windows, I must install "npm i cross-env" on every my project to fixed Webpark issue( path , NODE_ENV=development).
+
+```
+> npm i cross-env
+```
+
 npm install <packagename>@latest
 
-1. clone template from [gem-next-ts-base-starter](https://github.com/gemcloud/gem-next-ts-base-starter)
+1. clone template from [gem-ts-nextjs-base-starter](https://github.com/gemcloud/gem-next-ts-base-starter)
 
 Install
 

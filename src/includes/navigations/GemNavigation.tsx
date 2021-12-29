@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { InferGetStaticPropsType } from "next";
 import { menuItems } from "../../../gemDemoData/gemMenuItems";
 
@@ -50,9 +51,26 @@ function GemNavigation() {
     }
   }, [clientWindowHeight]);
 
+  type MyProps = {
+    name: string;
+  };
+
+  // const MyButton = React.forwardRef(({ href, onClick }, ref) => (
+  //   <a href={href} ref={ref} onClick={onClick}>
+  //     Click Me
+  //   </a>
+  // ));
+  //   const Input = React.forwardRef((props, ref) => <input {...props} />);
+  //   const CustomInput = React.forwardRef<HTMLInputElement, MyProps>(props) => {
+  //   // access your props and ref here
+  // };
+
   // return HTML
   return (
-    <div className="navbar-component">
+    <div
+      className="navbar-component"
+      style={{ marginBottom: offset >= 50 ? "5.5rem" : "0.0rem" }}
+    >
       <nav
         className="navbar navbar-expand-lg navbar-light fixed-top"
         style={{
@@ -89,7 +107,19 @@ function GemNavigation() {
               {/* loop item */}
               {menuItems.map(menuItem => (
                 <li key={menuItem.id} className="nav-item">
-                  <a
+                  <Link href={menuItem.hrefurl}>
+                    <a
+                      className="nav-link"
+                      onClick={() =>
+                        setNavigationMobile(
+                          showNavigationMobile ? !showNavigationMobile : false
+                        )
+                      }
+                    >
+                      {menuItem.name}
+                    </a>
+                  </Link>
+                  {/* <a
                     className="nav-link"
                     href={menuItem.hrefurl}
                     onClick={() =>
@@ -99,7 +129,7 @@ function GemNavigation() {
                     }
                   >
                     {menuItem.name}
-                  </a>
+                  </a> */}
                 </li>
               ))}
             </ul>

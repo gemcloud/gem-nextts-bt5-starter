@@ -1,3 +1,6 @@
+import { i18n } from "@lingui/core"; //<== i18n
+import { I18nProvider } from "@lingui/react"; //<== i18n
+
 import "bootstrap/dist/css/bootstrap.css"; // import bootstrap.css
 import "animate.css/animate.min.css";
 import "@/styles/wavehand.css";
@@ -7,14 +10,40 @@ import "@/styles/_gemhome.scss";
 // import "../styles/firstlanding.css";
 
 // import * as React from "react";
-import { useState, useEffect } from "react";
+import { initTranslation } from "@/utils/TranslationUtils"; //<== i18n
+import Head from "next/head";
+import { useRouter } from "next/router"; //<== i18n
+import { useState, useEffect, useRef } from "react";
 import Script from "next/script";
 import type { AppProps } from "next/app";
 import AOS from "aos";
 // import aos styles
 import "aos/dist/aos.css";
 
+//initialization function
+initTranslation(i18n); //<== i18n
+
 function MyApp({ Component, pageProps }: AppProps) {
+  //#### Start i18n  ####
+  const router = useRouter();
+  const locale = router.locale || router.defaultLocale!;
+  const firstRender = useRef(true);
+
+  // run only once on the first render (for server side)
+  if (pageProps.translation && firstRender.current) {
+    i18n.load(locale, pageProps.translation);
+    i18n.activate(locale);
+    firstRender.current = false;
+  }
+
+  useEffect(() => {
+    if (pageProps.translation) {
+      i18n.load(locale, pageProps.translation);
+      i18n.activate(locale);
+    }
+  }, [locale, pageProps.translation]);
+  //#### End i18n  ####
+
   //#### import bootstrap-js-libs below for _app.js   ####
   // useEffect(() => {
   //   import("bootstrap/dist/js/bootstrap");  // on error TypeScript.
@@ -47,6 +76,15 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
+      <Head>
+        {router.locales!.concat("x-default").map((locale: string) => {
+          const localePath = locale === "x-default" ? "" : `${locale}`;
+          const href = `https://linguijs-translation-demo.vercel.app/${localePath}${router.asPath}`;
+          return locale === "pseudo" ? null : (
+            <link key={locale} rel="alternate" hrefLang={locale} href={href} />
+          );
+        })}
+      </Head>
       <Script
         async
         src="https://www.googletagmanager.com/gtag/js?id=UA-125864873-1"
@@ -54,7 +92,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       ></Script>
       {/* <ThemeProvider attribute="class"> */}
       {/* <Layout></Layout> on each page file!!!*/}
-      <Component {...pageProps} />
+      <I18nProvider i18n={i18n}>
+        <Component {...pageProps} />
+      </I18nProvider>
       {/* </ThemeProvider> */}
     </>
   );

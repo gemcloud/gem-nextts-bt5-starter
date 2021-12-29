@@ -1,3 +1,4 @@
+import { t, Trans } from "@lingui/macro";
 import React from "react";
 import Image from "next/image";
 
@@ -5,7 +6,9 @@ const HomeSection = ({ parameter }: { parameter: string }): JSX.Element => {
   return (
     <section className="home-section active">
       <h1 className="hero-heading">
-        hello, i am <br /> Nick Name
+        <Trans>
+          hello, i am <br /> Nick Name
+        </Trans>
       </h1>
       <img src="/assets/images/amazing/home.png" className="home-img" alt="" />
 

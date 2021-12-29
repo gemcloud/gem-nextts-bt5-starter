@@ -47,6 +47,10 @@ https://github.com/BrunoS3D/nextjs-with-aos-example
   - data-aos="fade-in"
   - data-aos-delay="1700"
 
+### framer-motion
+
+https://www.npmjs.com/package/framer-motion
+
 #### Failed: react-animate-on-scroll : I do not see any anmination?
 
 ```

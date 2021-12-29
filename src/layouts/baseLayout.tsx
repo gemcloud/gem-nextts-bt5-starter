@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import { Meta } from "../../src/includes/seo/SeoMeta";
 
 // import Navigation from "../../src/includes/navigations/baseNavigation";
-import Navigation from "../../src/includes/navigations/rightmenuNavigation";
+import Navigation from "../includes/navigations/RightmenuNavigation";
 import Footer from "../../src/includes/footers/baseFooter";
 
 // interfacce

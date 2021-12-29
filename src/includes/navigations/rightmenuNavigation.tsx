@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 //export const rightmenuNavigation = () => {
 // const rightmenuNavigation = () => {
-function rightmenuNavigation() {
+function RightmenuNavigation() {
   const [clientWindowHeight, setClientWindowHeight] = useState<number>(0);
 
   // const [inputValue, setInputValue] = React.useState("");
@@ -127,4 +127,4 @@ function rightmenuNavigation() {
   );
 }
 
-export default rightmenuNavigation;
+export default RightmenuNavigation;

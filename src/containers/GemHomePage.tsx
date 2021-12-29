@@ -1,3 +1,4 @@
+// import { Trans } from "@lingui/macro";
 import React, { useState, useEffect } from "react";
 import { css } from "@emotion/react";
 import { ScaleLoader, ClipLoader } from "react-spinners";
