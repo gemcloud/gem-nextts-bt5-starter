@@ -1,11 +1,12 @@
 import { ReactNode } from "react";
-import { Meta } from "../includes/seo/SeoMeta";
-
+import { Meta } from "@/includes/seo/SeoMeta";
 import { PreloadProvider } from "@/context/PreloadContext";
-import Navigation from "../includes/navigations/GemNavigation";
-// import ModalLanguage from "../modals/LanguageModal";
+//import Navigation from "../includes/navigations/GemNavigation";
+import Navigation from "@/includes/navigations/GemNavigation";
 import Footer from "@/includes/footers/BaseFooter";
+
 // import LangSwitcher from "@/components/bases/LangSwitcher";
+// import ModalLanguage from "../modals/LanguageModal";
 
 // interfacce
 type ILayoutProps = {
