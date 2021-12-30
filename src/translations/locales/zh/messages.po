@@ -29,7 +29,7 @@ msgstr "法文"
 msgid "Japanese"
 msgstr "日文"
 
-#: src/pages/index.tsx:36
+#: src/pages/index.tsx:38
 msgid "Welcome to <0>Next.js!</0>"
 msgstr ""
 
@@ -41,6 +41,6 @@ msgstr ""
 msgid "next-explanation"
 msgstr ""
 
-#: src/pages/index.tsx:30
+#: src/pages/index.tsx:31
 msgid "site-title"
 msgstr ""

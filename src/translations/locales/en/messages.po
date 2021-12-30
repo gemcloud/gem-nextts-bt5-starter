@@ -29,7 +29,7 @@ msgstr "France"
 msgid "Japanese"
 msgstr "Japanese"
 
-#: src/pages/index.tsx:36
+#: src/pages/index.tsx:38
 msgid "Welcome to <0>Next.js!</0>"
 msgstr "Welcome to <0>Next.js!</0>"
 
@@ -41,6 +41,6 @@ msgstr "hello, i am <0/> Nick Name"
 msgid "next-explanation"
 msgstr "My text to be translated"
 
-#: src/pages/index.tsx:30
+#: src/pages/index.tsx:31
 msgid "site-title"
 msgstr "<0>🎯 Gem Cloud, Next.js, TypeScript, BootStrip5, Scss</0>"
