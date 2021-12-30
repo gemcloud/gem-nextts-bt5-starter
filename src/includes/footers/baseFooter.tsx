@@ -9,7 +9,7 @@ import {
   faPinterest
 } from "@fortawesome/free-brands-svg-icons";
 
-function baseFooter() {
+function BaseFooter() {
   return (
     <>
       <footer className="footer text-faded text-center py-5">
@@ -50,4 +50,4 @@ function baseFooter() {
   );
 }
 
-export default baseFooter;
+export default BaseFooter;

@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { css } from "@emotion/react";
 import { ScaleLoader, ClipLoader } from "react-spinners";
-import { AosAnimations } from "@/constants/aosAnimations";
+import ProjectContainer from "@/components/GitProjectContainer";
 
 const override = css`
   display: block;
@@ -221,6 +221,12 @@ function GemHomePage() {
             </div>
           </section>
 
+          <section id="projects" className="projects">
+            <div data-aos="fade-in" data-aos-delay="100">
+              <h2 className="heading"> Projects by Me 💕</h2>
+            </div>
+            <ProjectContainer />
+          </section>
           <section id="products" className="products">
             <div data-aos="fade-in" data-aos-delay="100">
               <h2 className="heading">Products</h2>
@@ -269,7 +275,6 @@ function GemHomePage() {
               </div>
             </div>
           </section>
-
           <section id="contact" className="contact">
             <h2 className="heading">Contact us</h2>
             <div className="content">

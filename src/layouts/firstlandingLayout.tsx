@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import { Meta } from "../includes/seo/SeoMeta";
 
 import Navigation from "../includes/navigations/firstLandingNavigation";
-import Footer from "../includes/footers/baseFooter";
+import Footer from "../includes/footers/BaseFooter";
 
 // interfacce
 type ILayoutProps = {

@@ -4,7 +4,7 @@ import { Meta } from "../includes/seo/SeoMeta";
 import { PreloadProvider } from "@/context/PreloadContext";
 import Navigation from "../includes/navigations/GemNavigation";
 // import ModalLanguage from "../modals/LanguageModal";
-import Footer from "../includes/footers/baseFooter";
+import Footer from "@/includes/footers/BaseFooter";
 // import LangSwitcher from "@/components/bases/LangSwitcher";
 
 // interfacce

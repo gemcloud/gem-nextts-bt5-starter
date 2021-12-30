@@ -13,6 +13,12 @@
 - CSS animation
 -
 
+#### public resource
+
+- get icons ( https://github.com/devicons/devicon)
+- get fonts ( https://github.com/devicons/devicon)
+- get free images ()
+
 ### 2021-12-24
 
 reference floyet.com
