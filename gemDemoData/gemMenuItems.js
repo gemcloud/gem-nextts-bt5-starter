@@ -2,32 +2,44 @@ export const menuItems = [
   {
     id: 1,
     name: "About us",
-    hrefurl: "#about"
+    scrollTo: "about",
+    hrefUrl: "/#about",
+    external: ""
   },
   {
     id: 2,
     name: "Services",
-    hrefurl: "#services"
+    scrollTo: "services",
+    hrefUrl: "/#services",
+    external: ""
   },
   {
     id: 3,
     name: "Showcases",
-    hrefurl: "#showcase"
+    scrollTo: "showcase",
+    hrefUrl: "/#showcase",
+    external: ""
   },
   {
     id: 4,
     name: "Products",
-    hrefurl: "#products"
+    scrollTo: "products",
+    hrefUrl: "/#products",
+    external: ""
   },
   {
     id: 5,
     name: "Blog",
-    hrefurl: "/indexFirebase"
+    scrollTo: "",
+    hrefUrl: "/indexFirebase",
+    external: ""
     //hrefurl: "/indexBase"
   },
   {
     id: 6,
     name: "Contact us",
-    hrefurl: "#contact"
+    scrollTo: "contact",
+    hrefUrl: "/#contact",
+    external: ""
   }
 ];

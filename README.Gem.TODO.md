@@ -68,4 +68,6 @@ gemHomePage
 2.  head.js portfolio one of showcase
 3.  thomas?
 
-#### 2021-12-29:
+#### 2021-12-29: GITHub API Done!
+
+#### 2021-12-30 -31: DevTo as CMS

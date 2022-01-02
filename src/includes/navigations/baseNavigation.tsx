@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useEffect, useState } from "react";
 
-const baseNavigation = () => {
+const BaseNavigation = () => {
   const [clientWindowHeight, setClientWindowHeight] = React.useState(0);
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -113,4 +113,4 @@ const baseNavigation = () => {
   );
 };
 
-export default baseNavigation;
+export default BaseNavigation;
