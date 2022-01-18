@@ -16,8 +16,8 @@ export const menuItems = [
   {
     id: 3,
     name: "Showcases",
-    scrollTo: "showcase",
-    hrefUrl: "/#showcase",
+    scrollTo: "showcases",
+    hrefUrl: "/#showcases",
     external: ""
   },
   {

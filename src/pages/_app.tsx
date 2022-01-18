@@ -1,12 +1,16 @@
 import { i18n } from "@lingui/core"; //<== i18n
 import { I18nProvider } from "@lingui/react"; //<== i18n
 
-import "bootstrap/dist/css/bootstrap.css"; // import bootstrap.css
+import "bootstrap/dist/css/bootstrap.min.css";
 import "animate.css/animate.min.css";
 import "@/styles/wavehand.css";
 import "@/styles/global.scss";
 import "@/styles/_nav.scss";
 import "@/styles/_gemhome.scss";
+
+import "@/styles/han/vendor/nucleo/css/nucleo.css";
+import "@/styles/han/vendor/font-awesome/css/font-awesome.min.css";
+// import "@/styles/han/argon-design-system-react.css";
 // import "../styles/firstlanding.css";
 
 // import * as React from "react";

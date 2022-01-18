@@ -1,6 +1,7 @@
 // Hamburger is mobile Icon .
 // Put your CSS here!
-export default function Hamburger({ onClick }: { onClick: any }) {
+// export default function Hamburger({ onClick }: { onClick: any }) {
+export default function Hamburger(onClick: any) {
   const hamburger = [];
   for (let i = 0; i < 3; i += 1) {
     hamburger.push(

@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { css } from "@emotion/react";
 import { ScaleLoader, ClipLoader } from "react-spinners";
 import ProjectContainer from "@/components/GitProjectContainer";
+import GemShowCaseContainer from "@/components/GemShowCaseContainer";
 
 const override = css`
   display: block;
@@ -227,6 +228,24 @@ function GemHomePage() {
             </div>
             <ProjectContainer />
           </section>
+
+          <section id="showcases" className="showcases">
+            <div data-aos="fade-in" data-aos-delay="100">
+              <h2 className="heading">Showcases</h2>
+            </div>
+
+            <div className="content">
+              <div data-aos="fade-in" data-aos-delay="200">
+                <p>Show Person website Templates.</p>
+              </div>
+              <div data-aos="slide-right">
+                <div className="row">
+                  <GemShowCaseContainer />
+                </div>
+              </div>
+            </div>
+          </section>
+
           <section id="products" className="products">
             <div data-aos="fade-in" data-aos-delay="100">
               <h2 className="heading">Products</h2>

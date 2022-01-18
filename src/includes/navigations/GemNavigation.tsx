@@ -104,7 +104,7 @@ function GemNavigation() {
             style={{ display: showNavigationMobile ? "block" : "none" }}
           >
             <ul className="navbar-nav ms-auto my-2 my-lg-0">
-              {menuItems.map(({ id, name, hrefUrl, scrollTo }) => (
+              {/* {menuItems.map(({ id, name, hrefUrl, scrollTo }) => (
                 <li key={id} className="nav-item" role="menuitem">
                   <Link
                     replace
@@ -117,10 +117,10 @@ function GemNavigation() {
                     </a>
                   </Link>
                 </li>
-              ))}
+              ))} */}
 
               {/* loop item */}
-              {/* {menuItems.map(menuItem => (
+              {menuItems.map(menuItem => (
                 <li key={menuItem.id} className="nav-item">
                   <Link href={menuItem.hrefUrl}>
                     <a
@@ -135,7 +135,7 @@ function GemNavigation() {
                     </a>
                   </Link>
                 </li>
-              ))} */}
+              ))}
             </ul>
           </div>
         </div>
